@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D98426D20CE497900F1A21B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98426C20CE497900F1A21B /* AppDelegate.swift */; };
-		0D98426F20CE497900F1A21B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98426E20CE497900F1A21B /* ViewController.swift */; };
+		0D98426F20CE497900F1A21B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98426E20CE497900F1A21B /* LoginViewController.swift */; };
 		0D98427220CE497900F1A21B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D98427020CE497900F1A21B /* Main.storyboard */; };
 		0D98427420CE497D00F1A21B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D98427320CE497D00F1A21B /* Assets.xcassets */; };
 		0D98427720CE497D00F1A21B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D98427520CE497D00F1A21B /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		0D98426920CE497900F1A21B /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D98426C20CE497900F1A21B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D98426E20CE497900F1A21B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D98426E20CE497900F1A21B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0D98427120CE497900F1A21B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D98427320CE497D00F1A21B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D98427620CE497D00F1A21B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			children = (
 				0D98427E20CE4A5600F1A21B /* GoogleService-Info.plist */,
 				0D98426C20CE497900F1A21B /* AppDelegate.swift */,
-				0D98426E20CE497900F1A21B /* ViewController.swift */,
+				0D98426E20CE497900F1A21B /* LoginViewController.swift */,
 				0D98427020CE497900F1A21B /* Main.storyboard */,
 				0D98427320CE497D00F1A21B /* Assets.xcassets */,
 				0D98427520CE497D00F1A21B /* LaunchScreen.storyboard */,
@@ -187,10 +187,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D98426F20CE497900F1A21B /* ViewController.swift in Sources */,
+				0D98426F20CE497900F1A21B /* LoginViewController.swift in Sources */,
 				0D98426D20CE497900F1A21B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
