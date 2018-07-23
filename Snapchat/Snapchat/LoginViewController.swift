@@ -71,6 +71,7 @@ class LoginViewController: UIViewController {
         }
     }
     
+    
     var signupMode = false
     
     func presentAlert(withAlert alert: String)
